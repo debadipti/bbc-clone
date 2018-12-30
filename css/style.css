@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.content-wrapper {
+  width: 90%;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.img-fix {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+}
+
+header .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .content-wrapper .sec-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .content-wrapper .sec-1 .brand {
+  height: 100%;
+  border-right: 1px solid #555;
+}
+
+header .content-wrapper .sec-1 .brand a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 900;
+  padding-right: 1.1rem;
+  line-height: 1.4;
+}
+
+header .content-wrapper .sec-1 .sign-in a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 0.2rem;
+  padding: 0 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+header .content-wrapper .sec-1 .sign-in a i {
+  font-size: 1.3rem;
+  margin-right: 0.4rem;
+}
+
+header .content-wrapper .sec-2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+}
+
+header .content-wrapper .sec-2 .nav-wrap a {
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0.8rem 1.1rem;
+  border-left: 1px solid #555;
+}
+
+header .content-wrapper .sec-2 .nav-wrap a:last-child {
+  padding-right: 3rem;
+  border-right: 1px solid #555;
+  position: relative;
+}
+
+header .content-wrapper .sec-2 .nav-wrap a:last-child i {
+  position: absolute;
+  right: 0.6rem;
+  top: 0.6rem;
+}
+
+header .content-wrapper .sec-3 {
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .content-wrapper .sec-3 input {
+  border: none;
+  background-color: #fff;
+  font-size: 0.8rem;
+  height: 1.55rem;
+  padding: 0.3rem 0.4rem;
+  margin-left: 1.5rem;
+}
+
+header .content-wrapper .sec-3 button {
+  all: unset;
+  background-color: #fff;
+  padding-top: 0.2rem;
+  height: 1.35rem;
+}
+
+header .content-wrapper .sec-3 button i {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.showcase {
+  background-color: #f4f4f4;
+  padding: 1.6rem 0;
+}
+
+.showcase .showcase-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0.9rem;
+}
+
+.showcase .showcase-top h1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 1.3rem;
+  color: #555;
+}
+
+.showcase .showcase-top p {
+  font-size: 1.4rem;
+  color: #999;
+}
+
+.showcase .main-showcase {
+  width: 100%;
+  padding: 0 0 0.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.showcase .main-showcase .flex-1 {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-right: 1rem;
+  height: 21rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.showcase .main-showcase .flex-1 a {
+  display: block;
+  text-decoration: none;
+}
+
+.showcase .main-showcase .flex-1 .news-text h1 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.showcase .main-showcase .flex-1 .news-text p {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-bottom: 0.6rem;
+}
+
+.showcase .main-showcase .flex-2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 1rem;
+  height: 21rem;
+}
+
+.showcase .main-showcase .flex-3 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 21rem;
+}
+
+.showcase .main-showcase .box-single {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  height: 10.2rem;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.showcase .main-showcase .news-text {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  color: #fff;
+  padding: 0.4em 0.9rem;
+}
+
+.showcase .main-showcase .news-text h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+}
+
+.showcase .main-showcase .news-text .news-category {
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #ddd;
+  margin-bottom: 0.4rem;
+  padding-left: 0.6rem;
+  border-left: 3px solid lightseagreen;
+}
+
+.showcase .main-showcase .opac {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+}
+/*# sourceMappingURL=style.css.map */
