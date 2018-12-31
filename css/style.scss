@@ -86,25 +86,28 @@ header {
     }
     .sec-3 {
       text-align: right;
-      display: flex;
-      align-items: center;
       position: relative;
-      input {
-        border: none;
-        background-color: #fff;
-        font-size: 0.8rem;
-        height: 1.55rem;
-        padding: 0.3rem 0.4rem;
-        margin-left: 1.5rem;
-      }
-      button {
-        all: unset;
-        background-color: #fff;
-        padding-top: 0.2rem;
-        height: 1.35rem;
-        i {
-          color: #000;
-          font-size: 1.2rem;
+      display: flex;
+      form {
+        display: flex;
+        align-items: center;
+        input {
+          border: none;
+          background-color: #fff;
+          font-size: 0.8rem;
+          height: 1.55rem;
+          padding: 0.3rem 0.4rem;
+          margin-left: 1.5rem;
+        }
+        button {
+          all: unset;
+          background-color: #fff;
+          padding-top: 0.2rem;
+          height: 1.35rem;
+          i {
+            color: #000;
+            font-size: 1.2rem;
+          }
         }
       }
     }

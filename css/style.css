@@ -107,16 +107,22 @@ header .content-wrapper .sec-2 .nav-wrap a:last-child i {
 
 header .content-wrapper .sec-3 {
   text-align: right;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .content-wrapper .sec-3 form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
-header .content-wrapper .sec-3 input {
+header .content-wrapper .sec-3 form input {
   border: none;
   background-color: #fff;
   font-size: 0.8rem;
@@ -125,14 +131,14 @@ header .content-wrapper .sec-3 input {
   margin-left: 1.5rem;
 }
 
-header .content-wrapper .sec-3 button {
+header .content-wrapper .sec-3 form button {
   all: unset;
   background-color: #fff;
   padding-top: 0.2rem;
   height: 1.35rem;
 }
 
-header .content-wrapper .sec-3 button i {
+header .content-wrapper .sec-3 form button i {
   color: #000;
   font-size: 1.2rem;
 }
