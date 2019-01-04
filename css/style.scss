@@ -22,6 +22,24 @@ html {
   height: auto;
 }
 
+// mixins
+@mixin hoverOpacity {
+  opacity: 0.95;
+  transition: 0.1s;
+}
+
+@mixin accentColor {
+  &.red {
+    border-left-color: rgb(228, 60, 31) !important;
+  }
+  &.blue {
+    border-left-color: rgb(55, 198, 255) !important;
+  }
+  &.yellow {
+    border-left-color: rgb(255, 227, 68) !important;
+  }
+}
+
 .news-category {
   font-weight: 600;
   font-size: 0.8rem;
@@ -29,7 +47,24 @@ html {
   color: #ddd;
   margin-bottom: 0.4rem;
   padding-left: 0.6rem;
-  border-left: 3px solid lightseagreen;
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: lightseagreen;
+  @include accentColor();
+}
+
+.trending-title {
+  padding: 0.6em 0;
+  span {
+    font-size: 1.4rem;
+    color: #444;
+    font-weight: bold;
+    padding-left: 0.8rem;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: rgb(12, 151, 144);
+    @include accentColor();
+  }
 }
 
 // Header Styling
@@ -154,6 +189,9 @@ header {
       a {
         display: block;
         text-decoration: none;
+        &:hover {
+          @include hoverOpacity();
+        }
       }
       .news-text {
         h1 {
@@ -172,10 +210,22 @@ header {
       flex: 1;
       margin-right: 1rem;
       height: 21rem;
+      a {
+        display: block;
+        text-decoration: none;
+        &:hover {
+          @include hoverOpacity();
+        }
+      }
     }
     .flex-3 {
       flex: 1;
       height: 21rem;
+      a {
+        &:hover {
+          @include hoverOpacity();
+        }
+      }
     }
     .box-single {
       display: block;
@@ -210,15 +260,17 @@ header {
 
 // Trending News
 .trending {
-  padding: 1.6rem 0;
+  padding: 2rem 0;
   .trending-box-flex {
     padding: 1rem 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
     .trend-box {
-      display: block;
+      display: inline-block;
       text-decoration: none;
-      &:not(:last-child) {
-        margin-right: 1rem;
+      &:hover {
+        @include hoverOpacity();
       }
       h3 {
         color: #222;

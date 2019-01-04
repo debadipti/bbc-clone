@@ -28,7 +28,47 @@ html {
   color: #ddd;
   margin-bottom: 0.4rem;
   padding-left: 0.6rem;
-  border-left: 3px solid lightseagreen;
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-left-color: lightseagreen;
+}
+
+.news-category.red {
+  border-left-color: #e43c1f !important;
+}
+
+.news-category.blue {
+  border-left-color: #37c6ff !important;
+}
+
+.news-category.yellow {
+  border-left-color: #ffe344 !important;
+}
+
+.trending-title {
+  padding: 0.6em 0;
+}
+
+.trending-title span {
+  font-size: 1.4rem;
+  color: #444;
+  font-weight: bold;
+  padding-left: 0.8rem;
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-left-color: #0c9790;
+}
+
+.trending-title span.red {
+  border-left-color: #e43c1f !important;
+}
+
+.trending-title span.blue {
+  border-left-color: #37c6ff !important;
+}
+
+.trending-title span.yellow {
+  border-left-color: #ffe344 !important;
 }
 
 header {
@@ -201,6 +241,12 @@ header .content-wrapper .sec-3 form button i {
   text-decoration: none;
 }
 
+.showcase .main-showcase .flex-1 a:hover {
+  opacity: 0.95;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
 .showcase .main-showcase .flex-1 .news-text h1 {
   font-size: 1.9rem;
   font-weight: 400;
@@ -221,11 +267,28 @@ header .content-wrapper .sec-3 form button i {
   height: 21rem;
 }
 
+.showcase .main-showcase .flex-2 a {
+  display: block;
+  text-decoration: none;
+}
+
+.showcase .main-showcase .flex-2 a:hover {
+  opacity: 0.95;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
 .showcase .main-showcase .flex-3 {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   height: 21rem;
+}
+
+.showcase .main-showcase .flex-3 a:hover {
+  opacity: 0.95;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .showcase .main-showcase .box-single {
@@ -262,23 +325,27 @@ header .content-wrapper .sec-3 form button i {
 }
 
 .trending {
-  padding: 1.6rem 0;
+  padding: 2rem 0;
 }
 
 .trending .trending-box-flex {
   padding: 1rem 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
 }
 
 .trending .trending-box-flex .trend-box {
-  display: block;
+  display: inline-block;
   text-decoration: none;
 }
 
-.trending .trending-box-flex .trend-box:not(:last-child) {
-  margin-right: 1rem;
+.trending .trending-box-flex .trend-box:hover {
+  opacity: 0.95;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .trending .trending-box-flex .trend-box h3 {
